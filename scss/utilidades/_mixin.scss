@@ -1,0 +1,32 @@
+// mixins
+
+@mixin flex {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+@mixin flex-dos {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-tres {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-cuatro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin reset-styles {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+

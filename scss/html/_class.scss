@@ -1,0 +1,124 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* Clases */
+
+.mt-0 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.imagenn {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+    padding: auto;
+    object-fit: cover;
+}
+
+.framed-h3 {
+    border: 2px solid $color-primario;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.map-container {
+    text-align: center;
+    margin: 20px 0;
+    iframe {
+        width: 80%; 
+        max-width: 600px;
+        height: 400px; 
+        border: 1px solid $color-primario;
+    }
+}
+
+.sec-lau {
+    @include flex-cuatro;
+}
+
+.shark {
+        @include flex-cuatro;
+        flex-direction: column;
+        margin-right: 50em;
+    h3 {
+        @include flex-dos;
+        margin-bottom: 10px; 
+        margin-right: 0em;
+    }
+    p {
+        max-width: 600px; 
+        margin: 0;
+        margin-top: 2em;
+    }
+}
+
+.sharky {
+    padding: 2em;
+}
+
+.contenedor {
+    @include flex-dos;
+    padding: 20px;
+}
+
+ul {
+    list-style: none; 
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+    img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.text-box {
+    position: absolute; 
+    top: -40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: $color-claro;
+    padding: 5px;
+    border: 2px solid $color-primario;
+}
+
+.image-container {
+    width: 48%; 
+    float: left; 
+    margin: 0,5%;
+    position: relative; 
+    border: 2px solid $color-primario; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    height: 400px; 
+    overflow: hidden;
+    img {
+        width: 100%; 
+    height: auto; 
+    max-height: 300px; 
+    object-fit: cover;
+    }
+    p {
+        margin-top: 20px; 
+        text-align: left;
+    }
+}

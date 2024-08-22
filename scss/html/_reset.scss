@@ -1,0 +1,8 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* reset */
+* {
+    @include reset-styles;
+}
+
